@@ -3,6 +3,7 @@ package com.example.projectone
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         rv_first = findViewById<RecyclerView>(R.id.rv_one_main)
         rv_first.setLayoutManager(LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false))
         rv_first.setItemAnimator(DefaultItemAnimator())
+        Toast.makeText(applicationContext,"Working",Toast.LENGTH_SHORT).show()
         getDat1a()
     }
 
